@@ -5,13 +5,13 @@
 ## 1. Giới thiệu
 
 - Môn học: PBL3  
-- Mục tiêu: (ghi ngắn gọn mục tiêu project, ví dụ: xây dựng ứng dụng ..., xử lý dữ liệu ..., v.v.)
+- Mục tiêu: đạt A+
 - Ngôn ngữ / công nghệ sử dụng:  
-  - Ví dụ: C/C++, Python, Arduino, v.v.
+  - C/C++, dùng es32c3 và ESPIDF/ rainmaker
 
 ## 2. Dữ liệu / File dung lượng lớn
-
-Do file dữ liệu quá lớn (khoảng 5–6GB) nên **không lưu trực tiếp trong GitHub**.  
+dữ liệu rút gọn ở đây 
+còn file có build ở dưới 
 Bạn có thể tải dữ liệu từ Google Drive tại đây:
 
 👉 **Link tải dữ liệu:**  
