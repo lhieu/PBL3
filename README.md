@@ -15,7 +15,7 @@ còn file có build ở dưới
 Bạn có thể tải dữ liệu từ Google Drive tại đây:
 
 👉 **Link tải dữ liệu:**  
-[Download từ Google Drive]([https://drive.google.com/your_file_id_o_day](https://drive.google.com/drive/folders/1f6aKR6eUqTvncebL4WvKkBLNIZ9UnEGj?usp=drive_link))
+[Download từ Google Drive]([https://drive.google.com/drive/folders/1f6aKR6eUqTvncebL4WvKkBLNIZ9UnEGj?usp=drive_link])
 
 Sau khi tải xong, giải nén (nếu có) và đặt dữ liệu vào thư mục:
 ```text
