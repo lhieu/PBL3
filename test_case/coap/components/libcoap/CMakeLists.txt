@@ -1,0 +1,37 @@
+idf_component_register(
+    SRCS
+        "coap_address.c"
+        "coap_async.c"
+        "coap_block.c"
+        "coap_cache.c"
+        "coap_debug.c"
+        "coap_dtls.c"
+        "coap_encode.c"
+        "coap_event.c"
+        "coap_hashkey.c"
+        "coap_io.c"
+        "coap_io_lwip.c"
+        "coap_layers.c"
+        "coap_mem.c"
+        "coap_net.c"
+        "coap_netif.c"
+        "coap_notls.c"
+        "coap_option.c"
+        "coap_pdu.c"
+        "coap_prng.c"
+        "coap_proxy.c"
+        "coap_resource.c"
+        "coap_session.c"
+        "coap_sha1.c"
+        "coap_str.c"
+        "coap_strm_lwip.c"
+        "coap_subscribe.c"
+        "coap_threadsafe.c"
+        "coap_time.c"
+        "coap_uri.c"
+        "coap_ws.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        mbedtls lwip
+)

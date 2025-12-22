@@ -1,0 +1,4 @@
+version: "1.0.0"
+description: "Custom IoT Button component"
+dependencies:
+  idf: ">=5.0.0"

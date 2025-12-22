@@ -1,0 +1,10 @@
+#ifndef COAP_CONFIG_H
+#define COAP_CONFIG_H
+
+#define COAP_DEBUG 1
+#define COAP_MAX_MESSAGE_SIZE 1152
+#define COAP_WITH_POSIX 0
+#define COAP_DISABLE_TCP 1
+#define COAP_DISABLE_TLS 1
+
+#endif // COAP_CONFIG_H

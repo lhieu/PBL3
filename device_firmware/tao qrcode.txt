@@ -1,0 +1,27 @@
+b1. idf.py add-dependency "espressif/qrcode^0.1.0~2"
+( chạy cái này sau khi cd đến project để có file yml trong main )
+b2 check cmake có này chưa mà ni hay có rồi  idf_component_register(
+    SRCS "app_wifi.c"
+    INCLUDE_DIRS "."
+    REQUIRES wifi_provisioning esp_rainmaker qrcode nvs_flash esp_pm
+)
+b3 sửa lại thành include "qrcode.h" thay vì <qrcode.h>
+b4 tìm dòng bị comment ni xong comment lại rồi thay cái không bị comment vào 
+//#ifdef CONFIG_APP_WIFI_PROV_SHOW_QR
+//    ESP_LOGI(TAG, "Scan this QR code from the ESP RainMaker phone app for Provisioning.");
+//    qrcode_display(payload);
+//#endif /* CONFIG_APP_WIFI_PROV_SHOW_QR */
+    
+    
+#ifdef CONFIG_APP_WIFI_PROV_SHOW_QR
+    ESP_LOGI(TAG, "Scan this QR code from the ESP RainMaker phone app for Provisioning.");
+
+    esp_qrcode_config_t cfg = ESP_QRCODE_CONFIG_DEFAULT();
+    cfg.max_qrcode_version = 10;              // payload RainMaker thường dài
+    cfg.qrcode_ecc_level   = ESP_QRCODE_ECC_LOW;
+
+    esp_err_t e = esp_qrcode_generate(&cfg, payload);
+    if (e != ESP_OK) {
+        ESP_LOGE(TAG, "esp_qrcode_generate failed: %s", esp_err_to_name(e));
+    }
+#endif /* CONFIG_APP_WIFI_PROV_SHOW_QR */
