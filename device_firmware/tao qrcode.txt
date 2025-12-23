@@ -37,4 +37,5 @@ cái thay vào 1
 b5 về cmake comment hoặc xóa dòng sau 
  # ${CMAKE_CURRENT_LIST_DIR}/../components/qrcode
 vì nó đang trỏ tới file qrcode ở components
+b6 xóa file qrcode ở trong components nếu có 
 lưu lại là xong
