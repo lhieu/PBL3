@@ -9,12 +9,15 @@ idf_component_register(
 bước kế
 ========trong app_wifi.c===========
 b3 sửa lại thành include "qrcode.h" thay vì <qrcode.h> 
-b4 tìm dòng bị comment ni xong comment lại rồi thay cái không bị comment vào 
+b4 tìm dòng trong cái 1 xong comment lại hoặc xóa rồi thay cái dưới vào (không bị comment) 
+
+cái 1
 //#ifdef CONFIG_APP_WIFI_PROV_SHOW_QR
 //    ESP_LOGI(TAG, "Scan this QR code from the ESP RainMaker phone app for Provisioning.");
 //    qrcode_display(payload);
 //#endif /* CONFIG_APP_WIFI_PROV_SHOW_QR */
-    
+
+cái thay vào 1
 #ifdef CONFIG_APP_WIFI_PROV_SHOW_QR
     ESP_LOGI(TAG, "Scan this QR code from the ESP RainMaker phone app for Provisioning.");
 
