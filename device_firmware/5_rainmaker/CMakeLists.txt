@@ -28,5 +28,5 @@ if(NOT TARGET espressif__network_provisioning AND TARGET wifi_provisioning)
     target_link_libraries(espressif__network_provisioning INTERFACE wifi_provisioning)
     message(STATUS "Aliased espressif__network_provisioning -> wifi_provisioning")
 endif()
-set(PROJECT_VER "3.5.6")
+set(PROJECT_VER "3.5.6") # đoạn này là đặt tên ver và sửa lại sau khi build
 project(5_rainmaker)
