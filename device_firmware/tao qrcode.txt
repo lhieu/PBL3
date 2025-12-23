@@ -1,4 +1,8 @@
-b1. idf.py add-dependency "espressif/qrcode^0.1.0~2"
+sau khi cd đến project 
+b1. 
+
+idf.py add-dependency "espressif/qrcode^0.1.0~2"
+
 ( chạy cái này sau khi cd đến project để có file yml trong main )
 b2 check cmake có này chưa. mà ni hay có rồi  
 idf_component_register(
