@@ -34,5 +34,7 @@ cái thay vào 1
         ESP_LOGE(TAG, "esp_qrcode_generate failed: %s", esp_err_to_name(e));
     }
 #endif /* CONFIG_APP_WIFI_PROV_SHOW_QR */
-
+b5 về cmake comment hoặc xóa dòng sau 
+ # ${CMAKE_CURRENT_LIST_DIR}/../components/qrcode
+vì nó đang trỏ tới file qrcode ở components
 lưu lại là xong
