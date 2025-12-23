@@ -21,10 +21,10 @@
 /**
  * @brief Light driver Macro
  */
-#define LIGHT_GPIO_RED          3
-#define LIGHT_GPIO_GREEN        4
-#define LIGHT_GPIO_BLUE         5
-#define LIGHT_GPIO_COLD         7
+#define LIGHT_GPIO_RED          8
+#define LIGHT_GPIO_GREEN        7
+#define LIGHT_GPIO_BLUE         6
+#define LIGHT_GPIO_COLD         5
 #define LIGHT_GPIO_WARM         10
 #define LIGHT_FADE_PERIOD_MS    100     /**< The time from the current state to the next state */
 #define LIGHT_BLINK_PERIOD_MS   1500    /**< Period of blinking lights */
